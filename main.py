@@ -47,7 +47,7 @@ bot = Client(
     bot_token=BOT_TOKEN
 )
 
-AUTH_USER = os.environ.get('AUTH_USERS', '5680454765').split(',')
+AUTH_USER = os.environ.get('AUTH_USERS', '7217398696').split(',')
 AUTH_USERS = [int(user_id) for user_id in AUTH_USER]
 if int(OWNER) not in AUTH_USERS:
     AUTH_USERS.append(int(OWNER))
@@ -65,25 +65,25 @@ photocp = 'https://tinypic.host/images/2025/03/28/IMG_20250328_133126.jpg'
 photozip = 'https://envs.sh/cD_.jpg'
 
 async def show_random_emojis(message):
-    emojis = ['🐼', '🐶', '🐅', '⚡️', '🚀', '✨', '💥', '☠️', '🥂', '🍾', '📬', '👻', '👀', '🌹', '💀', '🐇', '⏳', '🔮', '🦔', '📖', '🦁', '🐱', '🐻‍❄️', '☁️', '🚹', '🚺', '🐠', '🦋']
+    emojis = ['🍻', '🍻', '🍻', '🍻', '🚀', '✨', '💥', '☠️', '🥂', '🍾', '🦅', '🍻', '🍻', '🍺', '🍺', '🍷', '💉', '🍻', '🍺', '🥂', '🍺', '🐱', '🍻', '🍻', '🍻', '🚫', '📢', '💊']
     emoji_message = await message.reply_text(' '.join(random.choices(emojis, k=1)))
     return emoji_message
 
 # Inline keyboard for start command
-BUTTONSCONTACT = InlineKeyboardMarkup([[InlineKeyboardButton(text="📞 Contact", url="https://t.me/saini_contact_bot")]])
+BUTTONSCONTACT = InlineKeyboardMarkup([[InlineKeyboardButton(text="📞 Contact", url="https://t.me/txtuploder")]])
 keyboard = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/+3k-1zcJxINYwNGZl"),
-            InlineKeyboardButton(text="🛠️ Repo", url="https://github.com/cyberseller999/saini-txt-direct"),
+            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/txtuploder"),
+            InlineKeyboardButton(text="🛠️ Repo", url="https://t.me/txtuploder"),
         ],
     ]
 )
 
 # Image URLs for the random image feature
 image_urls = [
-    "https://tinypic.host/images/2025/02/07/IMG_20250207_224444_975.jpg",
-    "https://tinypic.host/images/2025/02/07/DeWatermark.ai_1738952933236-1.png",
+    "https://i.ibb.co/8Lz68mkF/photo-2025-06-04-19-25-56-7512177673657909284.jpg",
+    "https://i.ibb.co/8Lz68mkF/photo-2025-06-04-19-25-56-7512177673657909284.jpg",
     # Add more image URLs as needed
 ]
 
